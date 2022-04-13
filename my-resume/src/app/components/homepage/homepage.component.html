@@ -1,0 +1,290 @@
+<div class="background">
+    <mat-toolbar class="toolbar">
+        <mat-button class="home-button" routerLink="/homepage">
+            <h1>Mohamed Rameez Haniff</h1>
+        </mat-button>
+    </mat-toolbar>
+
+    <div class="page">
+        <mat-tab-group class="tabs" dynamicHeight="false" mat-align-tabs="center" animationDuration="200ms">
+            <mat-tab class="about-me" label="About me">
+                <div>
+                    <mat-card class="objective">
+                        <div class="header">
+                            <mat-card-title>About me</mat-card-title>
+                        </div>
+                        <mat-card-content>
+                            <div class="imgbox">
+                                <img class="center-fit" src="https://picsum.photos/1910/500">
+                            </div>
+                            <p class="about">I am a student seeking a graduate
+                                program/job which will help me further
+                                develop my skills as a software engineer.
+                                I am proficient with software
+                                development & database management
+                                and am eager learn new skills. I am
+                                currently working on relevant projects in
+                                Angular, ASP.NET web API, PostgreSQL,
+                                Dart and Flutter.
+                                I am looking for new opportunities which include modern, progressive
+                                technologies in a collaborative working environment. Learning new things and
+                                trying out new stuff are part of my motivation. New roles are of interest if
+                                I can accompany the software end to end - from planning, implementation,
+                                deployment towards monitoring. Amplified feedback loops and a culture of
+                                continuous learning and experimentation define a proper working environment
+                                for me.</p>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div class="skills">
+                    <mat-card class="skills">
+                        <div class="header">
+                            <mat-card-title>My Skillset</mat-card-title>
+                        </div>
+                        <mat-card-content>
+                            <ul class="list">
+                                <li>JavaScript</li>
+                                <li>HTML/CSS</li>
+                                <li>Angular</li>
+                                <li>SQL(PostgreSQL and SQL Server)</li>
+                                <li>C#</li>
+                                <li>ASP.NET and Entity Framework</li>
+                                <li>Dart</li>
+                                <li>Flutter</li>
+                            </ul>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </mat-tab>
+
+            <mat-tab class="projects" label="Education">
+                <div class="page-container">
+                    <div>
+                        <mat-card class="objective">
+                            <div class="header">
+                                <mat-card-title>Raisethorpe Secondary School</mat-card-title>
+                            </div>
+                            <mat-card-content>
+                                <mat-expansion-panel (opened)="highschoolOpenState = true" (closed)="highschoolOpenState = false">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            {{highschoolOpenState ? '' : 'Subjects Studied'}}
+                                        </mat-panel-title>
+                                        <mat-panel-description>
+                                        </mat-panel-description>
+                                    </mat-expansion-panel-header>
+                                    <ul class="list">
+                                        <h1>Subjects Studied</h1>
+                                        <li>Physical Science</li>
+                                        <li>Life Sciences</li>
+                                        <li>Geography</li>
+                                        <li>Mathematics</li>
+                                        <li>Afrikaans</li>
+                                        <li>English</li>
+                                        <li>Life Orientation</li>
+                                    </ul>
+                                </mat-expansion-panel>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+
+                    <div>
+                        <mat-card class="objective">
+                            <div class="header">
+                                <mat-card-title>IT Certifaction Academy</mat-card-title>
+                            </div>
+                            <mat-card-content>
+                                <mat-expansion-panel (opened)="qualificationOpenState = true" (closed)="qualificationOpenState = false">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            {{qualificationOpenState ? '' : 'Qualification'}}
+                                        </mat-panel-title>
+                                        <mat-panel-description>
+                                        </mat-panel-description>
+                                    </mat-expansion-panel-header>
+
+                                    <ul class="list">
+                                        <li>Qualification: National Certificate Information Technology
+                                            Systems Development: NQF Level 5</li>
+                                        <li>Duration: 2021 - Present</li>
+                                        <li>Location: Pietermaritzburg, KwaZulu Natal</li>
+                                    </ul>
+                                </mat-expansion-panel>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+
+                </div>
+            </mat-tab>
+            <mat-tab class="projects" label="Projects">
+                <div class="page-container">
+                    <div>
+                        <mat-card class="objective">
+                            <!-- <img src="https://i.pinimg.com/564x/3e/d3/83/3ed383ef4036f80f424f28b410080667.jpg"> -->
+                            <div class="header">
+                                <mat-card-title>
+                                    Genshin Impact Damage Calculator</mat-card-title>
+                            </div>
+                            <mat-card-content>
+                                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            {{panelOpenState ? '' : 'Genshin Damage Calculator is a tool aimed to visualize the damage number dealt by characters in Genshin Impact.'}}
+                                        </mat-panel-title>
+                                        <mat-panel-description>
+                                        </mat-panel-description>
+                                    </mat-expansion-panel-header>
+                                    <h1>About the project</h1>
+
+                                    <p class="desc">
+                                        Genshin Damage Calculator is a tool aimed to
+                                            visualize the damage number dealt by characters in Genshin Impact. This project is built in the Angular framework. As this is a
+                                        tool to cater to every character in the game, it is difficult to develop
+                                        all characters at once. So I have decided to develop character additions
+                                        in batches of 4. Currently the only available characters are Amber,
+                                        Barbara, Bennett and Beidou. More additions will be made with each
+                                        version.
+                                        This project is intended to work with the Genshin Impact API which I
+                                        have also developed. The repository can be made public when requested.</p>
+
+                                    <h1>Why this project?</h1>
+                                    <p class="alt-desc">
+                                        Although there are several great damage calculators for Genshin Impact
+                                        online , it is still difficult to use them to build up a character in
+                                        Genshin Impact . Many people who do not want to consider every possible
+                                        scenario would prefer a simple damage output based on their current
+                                        stats. This app focuses on simplicity for the use of casual genshin
+                                        impact players.</p>
+
+                                    <h1>What is the Genshin Damage Calculator used for</h1>
+                                    <h3> For:</h3>
+                                    <ul class="list">
+                                        <li>
+                                            Comparing between different character builds as well as
+                                            theorycrafting
+
+                                        </li>
+                                        <li>
+                                            Having a better understanding of how damage build up in Genshin
+                                            impact
+
+                                        </li>
+                                        <li>
+                                            Maximizing your damage in certain situations
+
+                                        </li>
+                                        <li>
+                                            Getting a glance of all your talent damages within a single page
+
+                                        </li>
+
+                                    </ul>
+                                    <br>
+
+                                    <h3> Not For(currently):</h3>
+                                    <ul class="list">
+                                        <li>
+                                            Calculation on a period of time(DPS calculation)
+
+
+                                        </li>
+                                        <li>
+                                            Calculation on temporary event buffs
+
+
+                                        </li>
+                                        <li>
+                                            Calculation of multiple characters
+
+                                        </li>
+                                        <li>
+                                            Calculation of attack sequences
+
+
+                                        </li>
+                                        <li>
+                                            Selection of external infusion sources
+
+                                        </li>
+                                    </ul>
+                                </mat-expansion-panel>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+
+                    <div>
+                        <mat-card class="objective">
+                            <!-- <img src="https://i.pinimg.com/564x/3e/d3/83/3ed383ef4036f80f424f28b410080667.jpg"> -->
+                            <div class="header">
+                                <mat-card-title>Flashcards Mobile App</mat-card-title>
+                            </div>
+                            <mat-card-content>
+                                <mat-expansion-panel (opened)="flashcardsOpenState = true" (closed)="flashcardsOpenState = false">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            {{flashcardsOpenState ? '' : 'Flashcards is a mobile app that allows the user to generate flashcards on their mobile device and save them locally'}}
+
+                                        </mat-panel-title>
+                                        <mat-panel-description>
+                                        </mat-panel-description>
+                                    </mat-expansion-panel-header>
+                                    <h1>About the project</h1>
+
+                                    <p class="desc">
+                                        Flashcards is a mobile app that allows the user to generate flashcards on their mobile device and save them locally. This project is built in the Flutter framework. The app allows users
+                                        to
+                                        create, store and display flashcards on their device. The app can be found <a
+                                            href="https://play.google.com/store/apps/details?id=com.KingKeoSoftworks.FlashCards&gl=ZA">here</a>
+                                    </p>
+
+                                </mat-expansion-panel>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <div>
+                        <mat-card class="objective">
+                            <!-- <img src="https://i.pinimg.com/564x/3e/d3/83/3ed383ef4036f80f424f28b410080667.jpg"> -->
+                            <div class="header">
+                                <mat-card-title>Blog Website</mat-card-title>
+                            </div>
+                            <mat-card-content>
+                                <mat-expansion-panel (opened)="blogOpenState = true" (closed)="blogOpenState = false">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            {{blogOpenState ? '' : 'Currently a work in progress.'}}
+                                        </mat-panel-title>
+                                        <mat-panel-description>
+                                        </mat-panel-description>
+                                    </mat-expansion-panel-header>
+                                    <p class="desc">Currently a work in progress. The website can be found here.</p>
+                                </mat-expansion-panel>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+
+                    <div>
+                        <mat-card class="objective">
+                            <!-- <img src="https://i.pinimg.com/564x/3e/d3/83/3ed383ef4036f80f424f28b410080667.jpg"> -->
+                            <div class="header">
+                                <mat-card-title>E-Commerce Website</mat-card-title>
+                            </div>
+                            <mat-card-content>
+                                <mat-expansion-panel (opened)="commerceOpenState = true" (closed)="commerceOpenState = false">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            {{commerceOpenState ? '' : 'Currently a work in progress.'}}
+                                        </mat-panel-title>
+                                        <mat-panel-description>
+                                        </mat-panel-description>
+                                    </mat-expansion-panel-header>
+                                    <p class="desc"> Currently a work in progress. The website can be found here.</p>
+                                </mat-expansion-panel>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

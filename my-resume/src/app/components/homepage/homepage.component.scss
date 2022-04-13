@@ -1,0 +1,76 @@
+
+
+.toolbar{
+    background-color: black;
+}
+
+.tabs{
+   background-color: black;
+   color: black;
+   cursor: pointer;
+
+}
+
+mat-card{
+    background-color: black;
+}
+mat-label{
+   font-size: 20px;
+}
+.damageComp{
+   padding: 20px;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.objective{
+text-align: center;
+ }
+
+
+.header{
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.about{
+    padding: 20px;
+}
+
+.page{
+    height: 100vh;
+}
+
+.background{
+    background-color: black;
+}
+
+.skills{
+    padding-top: 20px;
+}
+
+.list {
+    list-style-type: none;
+    text-align: center;
+    padding-right: 30px;
+   }
+
+
+a{
+    color: wheat;
+}
+
+mat-card-title{
+    text-align: center;
+}
+
+
